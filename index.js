@@ -10,8 +10,8 @@ const port = 5000;
 
 // Connect to the database
 mongoose
-  .connect('mongodb://localhost:27017/', { dbName: 'near_flip_raffle', useNewUrlParser: true })
-  // .connect('mongodb+srv://Daniel:$pkhong0218$@cluster0.kizfy.mongodb.net/test', { dbName: 'coin_flip_list', useNewUrlParser: true })
+  // .connect('mongodb://localhost:27017/', { dbName: 'near_flip_raffle', useNewUrlParser: true })
+  .connect('mongodb+srv://Daniel:$pkhong0218$@cluster0.kizfy.mongodb.net/test', { dbName: 'near_flip_raffle', useNewUrlParser: true })
   .then(() => console.log(`Database connected successfully`))
   .catch((err) => console.log(err));
 
